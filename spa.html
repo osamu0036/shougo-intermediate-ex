@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <meta name="description" content="タイトル ＝温泉 - 石井花壇 | 温海温泉旅館【公式サイト】" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <script src="https://kit.fontawesome.com/e08bb0f22f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a href="#"><img class="header-logo header-logo-layout js-header-logo01 is-show" src="img/Medium_logo01.png" alt="サイトのロゴ" /></a>
+        <a href="#"><img class="header-logo header-logo-layout js-header-logo02" src="img/Medium_logo02.png" alt="サイトのロゴ" /></a>
+        <h1 class="site-ttl"><a href="#">石井花壇</a></h1>
+        <div class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="room.html" class="header-nav-link">お部屋</a></li>
+            <li class="header-nav-item"><a href="cuisine.html" class="header-nav-link">お料理</a></li>
+            <li class="header-nav-item"><a href="spa.html" class="header-nav-link">温泉</a></li>
+          </ul>
+        </div>
+        <!-- /.header-nav -->
+        <a class="btn header-btn js-modal-open" data-target="modal01"><img class="header-btn-img" src="img/Medium_calender.png" alt="カレンダー" />宿泊予約</a>
+        <!-- /.btn .header-btn -->
+        <div id="modal01" class="modal js-modal">
+          <div class="modal__background js-modal-close"></div>
+          <div class="modal-content modal-content__layout">
+            <div class="modal-close js-modal-close"></div>
+            <!-- /.js-modal-close -->
+            <h2 class="reservation-ttl reservation-ttl__layout">宿泊予約</h2>
+            <div class="reservation-form">
+              <img src="img/Medium_close.png" alt="" class="modal-img-close js-modal-close" />
+              <ul class="reservation-form-list">
+                <li class="reservation-form-item">
+                  <label for="name" class="form-label form-label__layout">お名前</label>
+                  <input id="name" class="txt-form txt-form__layout" type="text" placeholder="例：石井正悟" />
+                </li>
+                <li class="reservation-form-item">
+                  <label for="email" class="form-label form-label__layout">メールアドレス</label>
+                  <input id="email" class="txt-form txt-form__layout" type="email" placeholder="例：Example@example.com" />
+                </li>
+                <li class="reservation-form-item">
+                  <label for="plan" class="form-label form-label__layout">ご希望プラン（空いているプランのみ表示されます）</label>
+                  <select name="" id="plan" class="txt-form txt-form__layout">
+                    <option value="">プランを選択してください</option>
+                    <option value="">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                    <option value="">② 平日に優雅に楽しむ、特別宿泊プラン</option>
+                    <option value="">③ 絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                  </select>
+                </li>
+                <li class="reservation-form-item">
+                  <label for="flatpickr" class="form-label form-label__layout">日時選択</label>
+                  <input class="txt-form txt-form__layout" id="flatpickr" placeholder="日時を選択してください" />
+                </li>
+              </ul>
+              <!-- /.reservation-form-list -->
+              <button id="submit-btn" class="btn reservation-form-btn reservation-form-btn__layout" type="submit">送信する</button>
+            </div>
+            <!-- /.reservation-form -->
+          </div>
+        </div>
+        <!-- /#modal01 .modal-calendar -->
+
+        <!-- -- hamburger -- -->
+        <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-global" aria-expanded="false" aria-label="メニューを開閉する"><span class="hamburger__line"></span><span class="hamburger-label">MENU</span></button>
+
+        <div class="sp-global-menu" id="js-global-menu" aria-hidden="true">
+          <nav class="hamburger-nav">
+            <ul class="hamburger-nav-list">
+              <li class="hamburger-nav-item"><a href="./room.html" class="hamburger-nav-link">お部屋</a></li>
+              <li class="hamburger-nav-item"><a href="./cuisine.html" class="hamburger-nav-link">お料理</a></li>
+              <li class="hamburger-nav-item"><a href="./spa.html" class="hamburger-nav-link">温泉</a></li>
+            </ul>
+            <!-- /.hamburger-nav-list -->
+          </nav>
+          <!-- /.hamburger-nav -->
+        </div>
+        <!-- /#js-global-menu.sp-global-menu -->
+        <div class="drawer-background" id="js-drawer-background"></div>
+        <!-- -- //hamburger -- -->
+      </div>
+      <!-- /.header-inner -->
+    </header>
+    <!-- ----------------//header------------------- -->
+
+    <!-- ----------------main------------------- -->
+    <main>
+      <!-- ----------------first-visual------------------- -->
+      <div class="first-visual">
+        <div class="first-visual-wrapper">
+          <h2 class="first-visual-copy first-visual-copy__layout">温泉</h2>
+          <img src="img/Medium_onsen-header.jpg" alt="料理の写真" class="first-visual-img" />
+          <!-- /.first-visual-copy -->
+        </div>
+        <!-- /.first-visual-wrapper -->
+      </div>
+      <!-- /.first-visual -->
+      <!-- ----------------//first-visual------------------- -->
+
+      <!-- ------------パンくずリスト--------------- -->
+      <div class="pan-list-wrapper">
+        <ul class="pan-list">
+          <li class="pan-list-item">
+            <p class="pan-list-txt pan-list-txt__layout"><a href="index.html">トップ</a></p>
+          </li>
+          <li class="pan-list-item">
+            <p><i class="fas fa-angle-right"></i></p>
+          </li>
+          <li class="pan-list-item">
+            <p class="pan-list-txt pan-list-txt__layout"><a href="spa.html">温泉</a></p>
+          </li>
+        </ul>
+      </div>
+      <!-- /.pan-list-wrapper -->
+      <!-- ------------//パンくずリスト--------------- -->
+
+      <!-- ---------------- room-content ------------------- -->
+      <section class="section-wrapper">
+        <div class="section-inner">
+          <div class="lower-page lower-page__layout room-content">
+            <p data-aos="fade-up" data-aos-duration="1000" class="lower-page-ttl lower-page-ttl__layout">
+              心も身体も癒やす汐の温泉。<br class="br-pc" />湯あたりしにくく、赤ちゃんから年配の方までどなたでもゆっくりと安心して入っていただけます。<br class="br-pc" />柔らかく優しい湯にじっくりと漬かれば、心身共にリラックスできます。
+            </p>
+            <ul class="lower-page-list">
+              <li data-aos="fade-up" data-aos-duration="1000" class="lower-page-item">
+                <div class="lower-page-img-wrapper">
+                  <img src="img/Medium_onsen01.jpg" alt="" class="lower-page-img" />
+                </div>
+                <div class="lower-page-body">
+                  <h3 class="lower-page-heading lower-page-heading__layout">貸し切り露天風呂「雲居の湯」</h3>
+                  <p class="lower-page-txt lower-page-txt__layout">弱酸性の湯質が優しく肌を包み込むような心地よさ<br class="br-pc" />最上階の露天風呂「雲居の湯」では、湯冷めしにくい食塩泉を<br class="br-pc" />熱海の町並みを遠方に望みながら・・・</p>
+                </div>
+                <!-- /.lower-page-body -->
+              </li>
+              <!-- /.lower-page-item -->
+              <li data-aos="fade-up" data-aos-duration="1000" class="lower-page-item__reverse">
+                <div class="lower-page-img-wrapper__reverse">
+                  <img src="img/Medium_onsen02.jpg" alt="" class="lower-page-img" />
+                </div>
+                <!-- /.lower-page-img-wrapper -->
+                <div class="lower-page-body__reverse">
+                  <h3 class="lower-page-heading lower-page-heading__layout">美肌を促す乳白色の硫黄泉を</h3>
+                  <p class="lower-page-txt lower-page-txt__layout">まじりっけなしの白いにごり湯。鳥海山から引いた酸性の強い硫酸塩泉を、<br class="br-pc" />たっぷりと掛け流しています。<br class="br-pc" />四季の移り変わりを、天然温泉の湯に浸りながら味わってください。</p>
+                  <!-- /.lower-page-txt -->
+                </div>
+                <!-- /.lower-page-body -->
+              </li>
+              <!-- /.lower-page-item -->
+            </ul>
+            <!-- /.lower-page-list -->
+            <!-- ------------ //room-content --------------- -->
+
+            <!-- --------- spa-feature-content ------------ -->
+            <section class="section-wrapper">
+              <div class="section-inner">
+                <div class="spa-feature-content">
+                  <h2 class="horizontal-table-ttl horizontal-table-ttl__layout">温泉の効能</h2>
+                  <!-- /.horizontal-table-ttl -->
+                  <div data-aos="fade-up" data-aos-duration="1000" class="horizontal-table">
+                    <table class="horizontal-table-inner">
+                      <tbody class="horizontal-table-body">
+                        <tr class="horizontal-table-row">
+                          <th class="horizontal-table-header horizontal-table-header__layout">効能</th>
+                          <td class="horizontal-table-txt horizontal-table-txt__layout">神経痛・慢性関節リューマチ・腰痛・冷え性・慢性婦人病・うちみなど</td>
+                        </tr>
+                        <tr class="horizontal-table-row">
+                          <th class="horizontal-table-header horizontal-table-header__layout">泉質</th>
+                          <td class="horizontal-table-txt horizontal-table-txt__layout">ナトリウム・カルシウム-塩化物泉</td>
+                        </tr>
+                        <tr class="horizontal-table-row">
+                          <th class="horizontal-table-header horizontal-table-header__layout">飲用効果</th>
+                          <td class="horizontal-table-txt horizontal-table-txt__layout horizontal-table-txt__multiple-row">弱塩化物泉は肌にやわらかなため、高齢者や病後の回復期によく、飲用すれば慢性便秘や慢性消化 器病に効果があります。</td>
+                        </tr>
+                      </tbody>
+                      <!-- /.horizontal-table-body -->
+                    </table>
+                    <!-- /.horizontal-table-inner -->
+                  </div>
+                  <!-- /.horizontal-table -->
+                </div>
+                <!-- /.spa-feature-content -->
+              </div>
+              <!-- /.section-inner -->
+            </section>
+            <!-- /.section-wrapper -->
+          </div>
+          <!-- /.room-content -->
+        </div>
+        <!-- /.section-inner -->
+      </section>
+      <!-- /.section-wrapper -->
+      <!-- --------- //spa-feature-content ------------ -->
+    </main>
+    <!-- ----------------//main------------------- -->
+
+    <!-- ----------------footer------------------- -->
+    <footer class="footer">
+      <div class="footer-background">
+        <div data-aos="fade-up" data-aos-duration="1000" id="scroll-fade-footer" class="footer-inner">
+          <div class="footer-menu">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <p class="footer-menu-txt"><a href="spa.html" class="footer-link">温 泉</a></p>
+                <a href="#!" class="footer-link"></a>
+              </li>
+              <li class="footer-item">
+                <p class="footer-menu-txt"><a href="cuisine.html" class="footer-link">お 料 理</a></p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-menu-txt"><a href="room.html" class="footer-link">お 部 屋</a></p>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-feature -->
+          <img src="img/Medium_logo02.png" alt="家紋の画像" class="section-logo section-logo__layout" />
+          <h2 class="footer-ttl footer-ttl__layout">石井花壇</h2>
+          <!-- /.footer-ttl -->
+          <div class="footer-address-body">
+            <p class="footer-post footer-post__layout">〒000-0000</p>
+            <p class="footer-address">山形県鶴岡市xxxxxxxxxx</p>
+          </div>
+          <!-- /.footer-address-body -->
+          <div class="footer-tel-fax-body">
+            <p class="footer-tel footer-tel__layout">000-0000-0000</p>
+            <p class="footer-fax">000-0000-0000</p>
+          </div>
+          <!-- /.footer-tel-fax-body -->
+        </div>
+        <!-- /.footer-inner -->
+      </div>
+      <!-- /.footer-background -->
+      <div class="footer-small footer-small__layout">
+        <small>Copyright &copy; 石井花壇 All Rights Reserved.</small>
+      </div>
+      <!-- /.footer-small -->
+    </footer>
+    <!-- ----------------//footer------------------- -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- ------ flatpickr ------ -->
+    <script>
+      flatpickr('#flatpickr', {
+        locale: 'ja',
+        minDate: 'today',
+        mode: 'range',
+        static: true,
+        dateFormat: 'Y-m-d',
+        conjunction: ' :: ',
+      });
+    </script>
+  </body>
+</html>
